@@ -45,7 +45,7 @@ void display_number(int number) {
         return;
     }
 
-    for (int segment = 0; segment< 7; segment++) {
+    for (int segment = 0; segment < 7; segment++) {
         unsigned char bitset = hex_segments[number];
         int on = bit_read(bitset, segment);
         digitalWrite(segment_pins[segment], on ? HIGH : LOW);

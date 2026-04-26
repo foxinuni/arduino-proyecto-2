@@ -15,7 +15,6 @@ private:
     OneWire* wire = NULL;
     DallasTemperature* sensor = NULL;
 
-
 public:
     TempSensor(int pin) : pin(pin), last_tick(millis()) {}
 
